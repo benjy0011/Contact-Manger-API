@@ -9,7 +9,6 @@ This project is a backend implementation of a Contact Management App, developed 
 -   **Scalability & Maintainability**: The app is built with scalability in mind, using Node.js, Express, and MongoDB with Mongoose for a robust and maintainable codebase.
 -   **Environment Configuration**: Secure handling of environment variables using dotenv, ensuring the application's security and flexibility across different environments.
 
-This project showcases my ability to develop secure and efficient backend systems, incorporating industry best practices and modern technologies.
 ## Routes
 ### Users
 - Register a user: POST `/api/users/register`
