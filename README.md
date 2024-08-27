@@ -13,12 +13,15 @@ This project showcases my ability to develop secure and efficient backend system
 ## Routes
 ### Users
 - Register a user: POST `/api/users/register`
+-- body: *{ username, email, password }*
 - Login a user: POST `/api/users/login`
+-- body: *{ email, password }*
 - Get current user info (private): GET `/api/users/current`
 ### Contacts
 (all the contacts related routes are private)
 - Get all contacts: GET `/api/contacts`
 - Create new contact: POST `/api/contacts`
+-- body: *{ name, email, phone }*
 - Get contact with *:id*: GET `/api/contacts/:id`
 - Update contact by *:id*: PUT `/api/contacts/:id`
 - Delete a contact by *:id*: DELETE `/api/contacts/:id`

@@ -72,8 +72,10 @@ const loginUser = asyncHandler(async (req, res) => {
             process.env.ACCESS_TOKEN_SECRET,
             { expiresIn: "1h" }
         );
+
         // Respond with the generated JWT token
         res.status(200).json({ accessToken }); // Send token to the client
+
     } else {
         res.status(401);
         throw new Error("Email of password is not valid");

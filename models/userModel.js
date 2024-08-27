@@ -15,11 +15,11 @@ const userSchema = new mongoose.Schema(
             trim: true,
             unique: true,
             require: [true, "Please add the user email address"],
-            lowercase: false,  // allow uppercase
+            lowercase: true,  
             validate: {
                 validator: function (email) {
                     // Using regex
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]$/;
+                    const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
                     // Test the email against the email regex
                     return emailRegex.test(email);
