@@ -9,18 +9,19 @@ This project is a backend implementation of a Contact Management App, developed 
 -   **Scalability & Maintainability**: The app is built with scalability in mind, using Node.js, Express, and MongoDB with Mongoose for a robust and maintainable codebase.
 -   **Environment Configuration**: Secure handling of environment variables using dotenv, ensuring the application's security and flexibility across different environments.
 
+This project showcases my ability to develop secure and efficient backend systems, incorporating industry best practices and modern technologies.
 ## Routes
 ### Users
 - Register a user: POST `/api/users/register`
--- body: *{ username, email, password }*
+	- body: *{ username, email, password }*
 - Login a user: POST `/api/users/login`
--- body: *{ email, password }*
+	- body: *{ email, password }*
 - Get current user info (private): GET `/api/users/current`
 ### Contacts
 (all the contacts related routes are private)
 - Get all contacts: GET `/api/contacts`
 - Create new contact: POST `/api/contacts`
--- body: *{ name, email, phone }*
+	- body: *{ name, email, phone }*
 - Get contact with *:id*: GET `/api/contacts/:id`
 - Update contact by *:id*: PUT `/api/contacts/:id`
 - Delete a contact by *:id*: DELETE `/api/contacts/:id`
